@@ -3,21 +3,19 @@ package Cards;
 public class Card {
     private String name;
     private cardType cardType;
-    private Color color;
     private int manaCost;
     private String cardEffects;
 
-    public Card(String cardName, cardType cardType, Color color ,int manaCost, String cardEffects) {
+    public Card(String cardName, cardType cardType,int manaCost, String cardEffects) {
         this.name = cardName;
         this.cardType = cardType;
-        this.color = color;
         this.manaCost = manaCost;
         this.cardEffects = cardEffects;
     }
 
     public Card(){
-        this("Cards.Card name not informed", null, null,
-                Integer.parseInt(("No mana cost informed")), "Cards.Card effects not informed");
+        this("Card name not informed", null,
+                Integer.parseInt(("No mana cost informed")), "Card effects not informed");
     }
 
     public String getName() {
@@ -42,14 +40,6 @@ public class Card {
 
     public void setManaCost(int manaCost) {
         this.manaCost = manaCost;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
     }
 
     public String getCardEffects() {
