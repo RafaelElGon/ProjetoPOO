@@ -1,30 +1,17 @@
 package Equipments.Weapon;
 
-public abstract class Weapon {
-    private String weaponName;
-    private int length; //in centimeters
+import Cards.Card;
+import Cards.cardType;
 
-    public Weapon(String weaponName, int length){
-        this.weaponName = weaponName;
-        this.length = length;
+public abstract class Weapon extends Card {
+    private static final Cards.cardType cardType = Cards.cardType.WEAPON;
+
+    public Weapon(String weaponName){
+        super(weaponName, cardType);
     }
-
-    public String getWeaponName(){
-        return this.weaponName;
+    public cardType getCardType(){
+        return cardType;
     }
-
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    public void setWeapon(String wp){
-        this.weaponName = wp;
-    }
-
     public abstract WeaponAttribute getWeaponAttribute();
 
     public abstract int WeaponDamage();

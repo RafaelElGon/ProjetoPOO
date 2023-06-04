@@ -1,19 +1,25 @@
 package Mobs;
-
-import Cards.cardType;
+//TODO: ATRIBUTO DE DANO NAS OUTRAS CRIATURAS, TALVEZ TIRAR DE ELFO CASO UMA IDEIA MELHOR SURJA
 
 public abstract class Creature {
-//    private static final cardType cardType = Cards.cardType.CREATURE;
-    private final int HP; //health points
-    private final int stamina; //energy necessary for attacks in combat
+
+    protected int HP; //pontos de vida
+
+    protected int stamina; //energia necessária pra atacar no combate
 
     public Creature(int HP, int stamina) {
         this.HP = HP;
         this.stamina = stamina;
     }
-//    public cardType getCardType(){
-//        return cardType;
-//    }
+    public abstract String getCreatureType();
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
+
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
+    }
 
     public int getHP() {
         return HP;
