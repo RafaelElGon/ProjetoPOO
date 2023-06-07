@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-//TODO: SISTEMA USANDO JOPTION PANE, E DEPOIS USANDO JFRAME
 //QUE DEUS TENHA PIEDADE DE MINHA ALMA
 
 public class CardDuelSystem {
