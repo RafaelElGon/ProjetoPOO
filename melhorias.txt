@@ -2,7 +2,7 @@ Considerando o programa principal (CardDuelSystem), identifiquei alguns atributo
 e possivelmente mais problemas que me passaram desapercebido, devido a minha percepção 
 possivelmente estar entorpecida pelo meu estado de ansiedade agravado.
 
-Levando em conta o resto do projeto, acredito que exista um mau design de projeto nas classes de interface de usuário,
+Levando em conta o resto do trabalho, acredito que exista um mau design de projeto nas classes de interface de usuário,
 a classe de teste é ínfima, com apenas um método de teste, verificando apenas algumas possibilidades de teste. 
 
 Outras melhorias foram descritas em outros espaços desse projeto (Readme.md, Exercício 8 - Questão 10)
