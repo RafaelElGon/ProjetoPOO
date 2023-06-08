@@ -1,4 +1,6 @@
-Considerando o programa principal (CardDuelSystem), identifiquei alguns atributos inutilizados, métodos sem necessidade, e possivelmente mais problemas que me passaram desapercebido, devido a minha percepção possivelmente estar entorpecida pelo meu estado de ansiedade agravado.
+Considerando o programa principal (CardDuelSystem), identifiquei alguns atributos inutilizados, métodos sem necessidade, 
+e possivelmente mais problemas que me passaram desapercebido, devido a minha percepção 
+possivelmente estar entorpecida pelo meu estado de ansiedade agravado.
 
 Levando em conta o resto do projeto, acredito que exista um mau design de projeto nas classes de interface de usuário,
 a classe de teste é ínfima, com apenas um método de teste, verificando apenas algumas possibilidades de teste. 
