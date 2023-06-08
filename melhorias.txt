@@ -1,0 +1,5 @@
+Considerando o programa principal (CardDuelSystem), não identifiquei os erros chamados de 'code smells', 
+contudo, minha percepção pode ter sido entorpecida pelo meu estado de ansiedade agravado.
+
+Levando em conta o resto do projeto, acredito que exista um mau design de projeto nas classes de interface do usuário
+a classe de teste é ínfima com apenas um método de teste, verificando apenas algumas possibilidades de teste. 
