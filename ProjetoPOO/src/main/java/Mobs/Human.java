@@ -1,12 +1,12 @@
 package Mobs;
 
 public class Human extends Creature{
-    private static final String creatureType = "HUMAN";
+    private static final String creatureType = "Human";
 
     private int damage = (int)(1 + Math.random() * 10);
 
     public Human() {
-        super(12, 8);
+        super(12);
     }
 
     public int getDamage() {

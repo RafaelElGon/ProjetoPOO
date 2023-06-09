@@ -3,16 +3,17 @@ package Equipments.Armor;
 import Cards.Card;
 import Cards.cardType;
 
-public class Armor extends Card {
+public class Armor implements Card {
+    private String armorName;
     protected int defense;
-    private double weight = (int) (1 + Math.random() * 12); //in kilograms
+    private int weight = (int) (1 + Math.random() * 12); //in kilograms
     private static final cardType cardType = Cards.cardType.ARMOR;
 
     public Armor(String armorName) {
-        super(armorName, cardType);
+        this.armorName = armorName;
         if(this.weight >= 10){
             this.defense = 10;
-        } else if(this.weight >= 4 && this.weight < 10){
+        } else if(this.weight >= 4){
             this.defense = 6;
         } else {
             this.defense = 4;
@@ -25,17 +26,27 @@ public class Armor extends Card {
             return ArmorAttribute.MEDIUM;
         }
         return ArmorAttribute.LIGHT;
-    }// changes the armor attribute based on its weight
-
+    }// muda o atributo da armadura baseado no peso
 
     public int getDefense(){
         return this.defense;
     }
-    public double getWeight(){
+    public int getWeight(){
         return this.weight;
     }
 
-    public cardType getcardType(){
+    @Override
+    public String getCardName() {
+        return this.armorName;
+    }
+
+    @Override
+    public cardType getCardType() {
         return cardType;
+    }
+
+    @Override
+    public void setCardName(String name) {
+        this.armorName = name;
     }
 }

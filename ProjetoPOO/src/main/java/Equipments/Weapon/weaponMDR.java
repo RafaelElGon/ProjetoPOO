@@ -12,7 +12,7 @@ public class weaponMDR extends Weapon{
 
     public int WeaponDamage() {
         return (int)(1 + Math.random() * 12);
-    } //The weapon damage is the result of a 12 sided dice roll
+    } //O dano da arma é o resultado de um d12
 
     public String getDiceDamage(){
         return diceDamage;
@@ -21,5 +21,15 @@ public class weaponMDR extends Weapon{
     @Override
     public WeaponAttribute getWeaponAttribute() {
         return weaponAttribute;
+    }
+
+    @Override
+    public String getCardName() {
+        return this.weaponName;
+    }
+
+    @Override
+    public void setCardName(String name) {
+        this.weaponName = name;
     }
 }
